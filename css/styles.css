@@ -139,7 +139,7 @@ color: #404bbf;
     letter-spacing: 0.02em;
     text-decoration:none ;
     position: relative;
-    color: #404bbf;
+  
     padding-top: 24px;
     padding-bottom: 24px;
     display: block;
@@ -154,7 +154,7 @@ color: #404bbf;
 .menu-link:focus{
     color: #404bbf;   
 }
-.menu-link::after{
+.menu-link.current:after{
     content:"" ;
    
     position: absolute; 
@@ -163,8 +163,12 @@ color: #404bbf;
     height: 4px;
     background-color: #404bbf; 
     border-radius: 2px;
+    width: 48px;
+ 
 }
-
+.menu-link.current{
+    color: #404BBF ;
+}
 .page-contact {
     font-family: "Roboto", sans-serif;
     font-style: normal;
@@ -722,7 +726,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px
 
 }
 .row-link:hover{
-    border: 1px solid #F4F4FD;
+   
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   
 
