@@ -156,7 +156,7 @@ color: #404bbf;
 }
 .menu-link.current:after{
     content:"" ;
-   
+   opacity: 0;
     position: absolute; 
     left: 0; 
     bottom: -1px; 
@@ -166,9 +166,12 @@ color: #404bbf;
     width: 48px;
  
 }
-.menu-link.current{
-    color: #404BBF ;
+.menu-link:hover:after,
+.menu-link:focus:after,
+.menu-link.current:after{
+opacity: 1;
 }
+
 .page-contact {
     font-family: "Roboto", sans-serif;
     font-style: normal;
